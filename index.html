@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- === CSS FILES === -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Kamerado</title>
 </head>
 <body>
@@ -17,10 +18,10 @@
                 <a href="#">Kamerado</a>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active">Om oss</a></li>
-                <li><a href="#">Ofte stilte spørsmål</a></li>
-                <li><a href="#">Tildelinger</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#about" class="active">Om oss</a></li>
+                <li><a href="#faq">Ofte stilte spørsmål</a></li>
+                <li><a href="#awards">Tildelinger</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
         <!-- Sidebar End -->
@@ -28,7 +29,7 @@
         <!-- Main Content Start-->
         <div class="main-content">
             <!-- Home Section Start -->
-            <section class="home section">
+            <section class="home section" id="#">
                 <div class="container">
                     <div class="row">
                         <div class="home-info">
@@ -37,14 +38,14 @@
                                 arvet en del av hans formue. Den forvaltes av selskapet Ubatuba AS.
                                 Vi har opprettet Kamerado for å gi deler av overskuddet videre til 
                                 mennesker og organisasjoner med gode prosjekter som hjelper folk.</p>
-                            <a href="#" class="button">Send inn søknad</a>
+                            <a href="soknad.html" class="button">Send inn søknad</a>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Home Section End -->
             <!-- About Section Start -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="rows">
                         <div class="section-title">
@@ -77,7 +78,7 @@
             </section>
             <!-- About Section End -->
             <!-- FAQ Section Start -->
-            <section class="faq section">
+            <section class="faq section" id="faq">
                 <div class="container">
                     <div class="rows">
                         <div class="section-title">
@@ -119,7 +120,7 @@
             </section>
             <!-- FAQ Section End -->
             <!-- Awards Section Start -->
-            <section class="awards section">
+            <section class="awards section" id="awards">
                 <div class="container">
                     <div class="rows">
                         <div class="section-title">
@@ -172,43 +173,78 @@
             </section>
             <!-- Awards Section End -->
             <!-- Contact Section Start -->
-            <section class="faq section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="rows">
-                        <div class="section-title">
-                            <h2>Ofte stilte spørsmål</h2>
+                        <div class="contact-title">
+                            <h2>Kontakt</h2>
                         </div>
                     </div>
                     <div class="rows">
-                        <div class="faq-content">
-                            <div class="faq-question">
-                                <span>Hvem kan motta penger?</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Både små og store prosjekter kan søke om midler så lenge Kamerados vedtekter ivaretas.</p>
-                            </div>
-                            <div class="faq-question">
-                                <span>Hvordan søke om penger?</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Bruk søknadsskjemaet på forsiden. Maksgrensen på søknadsbeløp er kr 200.000. Søknaden vil bli
-                                    faktasjekket. Vi forutsetter korrekte og ærlige opplysninger.
-                                </p>
-                            </div>
-                            <div class="faq-question">
-                                <span>Når foregår tildelingen?</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Styret møtes regelmessing og vi behandler søknadene fortløpende. Utdeling av midler skjer opptil fire ganger i året.</p>
-                            </div>
-                            <div class="faq-question">
-                                <span>Hvilke krav stilles til rapportering?</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Prosjekter som mottar støtte må rapportere om hvordan midlene er brukt, og at det er i overensstemmelse med prosjektsøknad og oppsatt budsjett.</p>
-                                <p>Eget rapporteringsskjema blir utdelt ved tildeling av midler.</p>
-                            </div>
+                        <!-- ==== Contact info item start ==== -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Telefon</h4>
+                            <p>+47 482 41 583</p>
                         </div>
+                        <!-- ==== Contact info item end ==== -->
+                        <!-- ==== Contact info item start ==== -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Postaddresse</h4>
+                            <p>Helgesens gate 66B</p>
+                            <p>0550 Oslo</p>
+                        </div>
+                        <!-- ==== Contact info item end ==== -->
+                        <!-- ==== Contact info item start ==== -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Mail</h4>
+                            <p>kontakt@kamerado.no</p>
+                        </div>
+                        <!-- ==== Contact info item end ==== -->
+                    </div>
+                    <p class="contact-paragraph">Ta kontakt med oss hvis du har spørsmål eller tips. Alle personopplysninger vil bli behandlet
+                        konfidensielt.</p>
+                    <h3 class="contact-title">SEND OSS EN MAIL</h3>
+                    <div class="rows">
+                        <div class="contact-form">
+                            <form action="https://formspree.io/f/mleknked" method="POST">
+                                    <div class="rows">
+                                        <div class="form-item col-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Navn" name="Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-item col-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Mail" name="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rows">
+                                        <div class="form-item col-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Subjekt" name="Subject">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rows">
+                                        <div class="form-item col-12">
+                                            <div class="form-group">
+                                                <textarea name="" class="form-control" id="" placeholder="Melding" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rows">
+                                        <div class="form-item col-12">
+                                            <button type="submit" value="Submit" class="btn">Send Melding</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                            </form>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </section>

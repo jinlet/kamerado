@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    --bg-black:#171717;
-    --bg-gray: #212121;
-    --text-peach: #FDD9C3;
+    --bg-black:#112D32;
+    --bg-gray: #254E58;
+    --text-peach: #b4ab99;
 }
 
 .hidden {
@@ -69,7 +69,7 @@ body {
 .sidebar .logo a::before {
     content: '';
     position: absolute;
-    width: 72%;
+    width: 100%;
     border-bottom: 2px solid var(--text-peach);
     bottom: -3px;
 }
@@ -218,10 +218,11 @@ ul {
     display: flex;
     color: var(--text-peach);
     background-image: url("../images/logo.png");
-    background-size: auto 800px;
+    background-size: auto 600px;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .home-info {
     display: flex;
@@ -392,4 +393,219 @@ ul {
 
 .shadow-dark {
     box-shadow: 0 0 10px rgba(253, 217, 196, 0.507);
+}
+
+/*SOEKNADSSKJEMA*/
+.soknad .soknad-form
+{
+    flex: 0 0 80%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.soknad .soknad-form .col-6
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 10px;
+}
+.soknad .soknad-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.soknad .soknad-form .form-item
+{
+    margin-bottom: 20px;
+}
+.soknad .soknad-form .form-item .form-control
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black);
+    border: 1px solid var(--bg-gray);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--text-peach);
+    transition: all 0.3s ease;
+}
+.soknad .soknad-form .form-item .form-control:focus
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.soknad .soknad-form .form-item textarea.form-control
+{
+    height: 140px;
+}
+.btn
+{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 35px;
+    color: var(--bg-gray);
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--text-peach);
+    transition: all 0.3s ease;
+}
+.btn:hover
+{
+    transform: scale(1.1);
+}
+
+.soknad .soknad-form .btn
+{
+    height: 50px;
+    padding: 0 50px;
+}
+
+.soknad .section-title {
+    display: block; /* Ensure the title is a block element */
+    margin: 0 auto; /* Center the title horizontally */
+    margin-bottom: 60px;
+}
+
+.soknad label {
+    color: var(--text-peach); /* Change text color */
+    font-size: 16px; /* Change font size */
+    font-weight: bold; /* Change font weight */
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 0; /* Add margin below the form elements */
+}
+
+/* KONTAKT */
+.contact-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.contact-title h2 {
+    font-size: 40px;
+    color: var(--text-peach);
+    font-weight: 700;
+    position: relative;
+}
+
+.contact-title h2::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--text-peach);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.contact .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.contact .contact-form .col-6
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .contact-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .form-item
+{
+    margin-bottom: 20px;
+}
+.contact .contact-form .form-item .form-control
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black);
+    border: 1px solid var(--bg-gray);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--text-peach);
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control
+{
+    height: 140px;
+}
+.btn
+{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 35px;
+    color: var(--bg-gray);
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--text-peach);
+    transition: all 0.3s ease;
+}
+.btn:hover
+{
+    transform: scale(1.1);
+}
+
+.contact .contact-form .btn
+{
+    height: 50px;
+    padding: 0 50px;
+}
+
+.contact .contact-title {
+    font-size: 24px;
+    color: var(--text-peach);
+    margin-bottom: 30px;
+}
+
+.contact .contact-info-item {
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    color: var(--text-peach)
+}
+
+.contact .contact-info-item .icon
+{
+    display: inline-block;
+}
+.contact .contact-info-item .icon .fa
+{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-paragraph {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--text-peach);
+    font-weight: 500;
+    margin-bottom: 30px;
 }
