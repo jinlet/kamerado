@@ -6,6 +6,7 @@
     <title>Søknadsskjema - Kamerado</title>
     <!-- Include any necessary CSS files here -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="main-content">
@@ -13,6 +14,7 @@
         <div class="container">
             <div class="rows">
                 <div class="section-title">
+                    <a href="index.html"><i class="fa fa-arrow-circle-left"></i></a>
                     <h2>Søknadsskjema Kamerado</h2>
                 </div>
                 <div class="soknad-form">
@@ -21,88 +23,88 @@
                         <div class="form-item col-6">
                             <div class="form-group">
                                 <label for="name">Prosjekttittel</label>
-                                <input type="text" class="form-control" name="Prosjekttittel">
+                                <input type="text" class="form-control" name="Prosjekttittel" required>
                             </div>
                         </div>
                         <div class="form-item col-6">
                             <div class="form-group">
                                 <label for="name">Søkerorganisasjon</label>
-                                <input type="text" class="form-control" name="Søkerorganisasjon">
+                                <input type="text" class="form-control" name="Søkerorganisasjon" required>
                             </div>
                         </div>
                         <div class="form-item col-6">
                             <div class="form-group">
                                 <label for="name">Prosjektleder</label>
-                                <input type="text" class="form-control" name="Prosjektleder">
+                                <input type="text" class="form-control" name="Prosjektleder" required>
                             </div>
                         </div>
                         <div class="form-item col-6">
                             <div class="form-group">
                                 <label for="name">Kontaktinformasjon</label>
-                                <input type="text" class="form-control" name="Kontaktinformasjon">
+                                <input type="text" class="form-control" name="Kontaktinformasjon" required>
                             </div>
                         </div>
                         <div class="form-item col-6">
                             <div class="form-group">
                                 <label for="name">Søknadssum</label>
-                                <input type="text" class="form-control" placeholder="Søknadssum inntil kr 200.000,-" name="Søknadssum">
+                                <input type="text" class="form-control" placeholder="Søknadssum inntil kr 200.000,-" name="Søknadssum" required>
                             </div>
                         </div>
                         <div class="form-item col-6">
                             <div class="form-group">
                                 <label for="name">Kontonummer</label>
-                                <input type="text" class="form-control" name="Kontonummer">
+                                <input type="text" class="form-control" name="Kontonummer" required>
                             </div>
                         </div>
                     </div>
-                    <hr>
+                    <div class="divider-line" style="margin-top: 10px"></div>
                     <div class="rows" style="padding-top: 40px;">
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="name">1. Bakgrunn for prosjektet/tiltaket</label>
-                                <textarea name="1. Bakgrunn for prosjektet/tiltaket" class="form-control" id="" placeholder="Beskriv og underbygg behovet eller problemet som ligger til grunn for prosjektet."></textarea>
+                                <textarea name="1. Bakgrunn for prosjektet/tiltaket" class="form-control" id="" placeholder="Beskriv og underbygg behovet eller problemet som ligger til grunn for prosjektet." required></textarea>
                             </div>
                         </div>
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="name">2. Beskrivelse av prosjektet</label>
-                                <textarea name="2. Beskrivelse av prosjektet" class="form-control" id="" placeholder="Hva dere har tenkt å gjøre og hvilke planer har dere for gjennomføringen? Det må være samsvar mellom aktivitet og økonomi i prosjektet."></textarea>
+                                <textarea name="2. Beskrivelse av prosjektet" class="form-control" id="" placeholder="Hva dere har tenkt å gjøre og hvilke planer har dere for gjennomføringen? Det må være samsvar mellom aktivitet og økonomi i prosjektet." required></textarea>
                             </div>
                         </div>
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="name">3. Målsetting for prosjektet/tiltaket</label>
-                                <textarea name="3. Målsetting for prosjektet/tiltaket" class="form-control" id="" placeholder="Hva er hovedmålet og resultatmålet for prosjektet?"></textarea>
+                                <textarea name="3. Målsetting for prosjektet/tiltaket" class="form-control" id="" placeholder="Hva er hovedmålet og resultatmålet for prosjektet?" required></textarea>
                             </div>
                         </div>
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="antall">5. Antall personer dere planlegger å få med/eller nå</label>
-                                <input type="number" class="form-control" name="5. Antall personer dere planlegger å få med/eller nå">
+                                <input type="number" class="form-control" name="5. Antall personer dere planlegger å få med/eller nå" required>
                             </div>
                         </div>
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="name">6. Hvilke resultater forventer dere å oppnå</label>
-                                <textarea name="6. Hvilke resultater forventer dere å oppnå" class="form-control" id="" placeholder="Resultater på lang og kort sikt?"></textarea>
+                                <textarea name="6. Hvilke resultater forventer dere å oppnå" class="form-control" id="" placeholder="Resultater på lang og kort sikt?" required></textarea>
                             </div>
                         </div>
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="name">7. Ser dere noen eventuelle utfordringer i prosjektet?</label>
-                                <textarea name="7. Ser dere noen eventuelle utfordringer i prosjektet?" class="form-control" id="" placeholder="Beskriv hvilke utfordringer dere ser i prosjektet, for eksempel i gjennomføring eller for å oppnå resultatmålene. Beskriv også hvordan dere vil løse disse utfordringene dersom de oppstår."></textarea>
+                                <textarea name="7. Ser dere noen eventuelle utfordringer i prosjektet?" class="form-control" id="" placeholder="Beskriv hvilke utfordringer dere ser i prosjektet, for eksempel i gjennomføring eller for å oppnå resultatmålene. Beskriv også hvordan dere vil løse disse utfordringene dersom de oppstår." required></textarea>
                             </div>
                         </div>
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="name">8. Budsjett</label>
-                                <textarea name="8. Budsjett" class="form-control" id="" placeholder="Hva skal midlene brukes til? Sett opp et konkret budsjett over hvilke summer av det omsøkte beløpet som skal brukes til hva."></textarea>
+                                <textarea name="8. Budsjett" class="form-control" id="" placeholder="Hva skal midlene brukes til? Sett opp et konkret budsjett over hvilke summer av det omsøkte beløpet som skal brukes til hva." required></textarea>
                             </div>
                         </div>
                         <div class="form-item col-12">
                             <div class="form-group">
                                 <label for="name">9. Andre finansieringskilder</label>
-                                <textarea name="9. Andre finansieringskilder" class="form-control" id="" placeholder="Har prosjektet andre finansieringskilder? Og i så fall hvilke? Hva er totalbudsjettet?"></textarea>
+                                <textarea name="9. Andre finansieringskilder" class="form-control" id="" placeholder="Har prosjektet andre finansieringskilder? Og i så fall hvilke? Hva er totalbudsjettet?" required></textarea>
                             </div>
                         </div>
                     </div>
