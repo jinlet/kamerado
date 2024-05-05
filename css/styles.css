@@ -182,6 +182,7 @@ ul {
     color: var(--text-peach);
     font-weight: 700;
     position: relative;
+    white-space: nowrap;
 }
 
 .section-title h2::after {
@@ -257,10 +258,6 @@ ul {
     margin-bottom: 50px;
 }
 
-.kamerado {
-    font-weight: bold;
-}
-
 .home-info p {
     margin-top: 20px; /* Add some space between paragraphs */
     width: 100%;
@@ -303,8 +300,7 @@ ul {
 
 /* OM OSS */
 .about .about-content {
-    display: flex;
-    justify-content: space-between; /* Spread the content horizontally */
+    display: relative;
 }
 
 .about .section-title {
@@ -312,9 +308,10 @@ ul {
 }
 
 .about .about-content .about-text {
-    flex: 0 0 45%;
-    max-width: 50%;
+    display: inline-block;
+    max-width: 45%;
     margin-top: 50px;
+    vertical-align: top;
 }
 
 .about .about-content .about-text p {
@@ -324,11 +321,13 @@ ul {
 }
 
 .about .about-members {
-    flex: 0 0 50%;
+    display: inline-block;
     font-size: 18px;
     color: var(--text-peach);
-    padding-left: 80px;
+    padding-left: 60px;
     margin-top: 40px;
+    border-left: 1px solid rgba(210, 227, 200, 0.2);
+    margin-left: 50px;
 }
 
 .about .about-members p {
@@ -345,30 +344,19 @@ ul {
     margin-top: 40px;
     margin-bottom: 80px;
 }
-.board-members p {
+.board-member-line {
     border-bottom: 2px solid var(--text-peach);
-    width: 35%;
+    display: inline-block;
+    width: auto;
 }
 .board-members li {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .about .about-members ul li {
     font-size: 18px;
     color: var(--text-peach);
     margin-bottom: 10px;
-}
-
-.about-content::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 1px;
-    left: 50%;
-    margin-top: 20px;
-    opacity: 0.2;
-    transform: translateX(-50%);
-    background-color: var(--text-peach);
 }
 
 /* FAQ */
@@ -714,8 +702,8 @@ ul {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
-    margin-bottom: 60px;
-    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     color: var(--text-peach)
 }
 
@@ -731,7 +719,7 @@ ul {
     font-weight: 700;
     color: var(--text-black-900);
     text-transform: capitalize;
-    margin: 15px 0 5px;
+    margin: 5px 0 5px;
 }
 
 .contact .contact-paragraph {
@@ -746,7 +734,7 @@ ul {
 }
 
 /* ADJUSTING RESPONSE FOR SMALL SCREENS */
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     .sidebar {
         left: -270px;  /*removes navbar*/
     }
@@ -758,12 +746,53 @@ ul {
     }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .home .home-img img {
         display: none;
     }
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
+        justify-content: center;
     }
+}
+
+
+@media screen and (max-width: 850px) {
+    .about .about-content {
+        display: flex;
+    }
+    .faq .faq-content {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    .home-info h3 {
+        font-size: 28px;
+        white-space: nowrap; /* Prevent text wrapping */
+        margin-bottom: 30px;
+    }
+    .home-info p {
+        font-size: 18px;
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+    .about .about-content .about-text p {
+        font-size: 18px;
+    }
+    .about .about-members {
+        font-size: 18px;
+        color: var(--text-peach);
+        padding-left: 60px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .about .about-content {
+        margin-left: 40px;
+    }
+    .faq .faq-content {
+        max-width: 120%;
+    }  
 }
