@@ -23,9 +23,6 @@
     --bg-black:#4F6F52;
     --bg-gray: #739072;
     --text-peach: #D2E3C8;
-    --hello: #2E482E;
-    
-
 }
 
 .hidden {
@@ -37,6 +34,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
+    background: var(--bg-gray);
 }
 
 * {
@@ -156,7 +154,7 @@ ul {
 /* SECTION START */
 
 .main-content {
-    padding-left: 270px;
+    padding-left: 150px;
     background: var(--bg-gray);
 }
 
@@ -165,8 +163,7 @@ ul {
     display: block;
     position: relative;
     padding: 0 30px;
-    left: -135px;
-    width: calc(100%+270px);
+    background: var(--bg-gray);
 }
 
 .section .container {
@@ -210,7 +207,7 @@ ul {
 
 /* HOME */
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
 }
@@ -243,12 +240,13 @@ ul {
 .home-img {
     flex: 0 0 40%;
     max-width: 40%;
-    text-align: center;
-    position: relative;
-    text-align: center;
+    display: flex; /* Add display flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 } 
 .home-img img {
     height: 500px;
+    max-height: 450px;
     filter: brightness(0) saturate(100%) invert(23%) sepia(14%) saturate(1162%) hue-rotate(71deg) brightness(96%) contrast(91%);
     transform: scaleX(-1);
 }
@@ -745,4 +743,27 @@ ul {
     font-weight: 500;
     margin-bottom: 10px;
     margin-top: 30px;
+}
+
+/* ADJUSTING RESPONSE FOR SMALL SCREENS */
+@media (max-width: 1199px) {
+    .sidebar {
+        left: -270px;  /*removes navbar*/
+    }
+    .main-content {
+        padding-left: 20px;
+    }
+    .home-img img {
+        max-height: 300px; 
+    }
+}
+
+@media (max-width: 991px) {
+    .home .home-img img {
+        display: none;
+    }
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
