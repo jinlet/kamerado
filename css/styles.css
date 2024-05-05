@@ -23,6 +23,7 @@
     --bg-black:#4F6F52;
     --bg-gray: #739072;
     --text-peach: #D2E3C8;
+    --hello: #2E482E;
     
 
 }
@@ -62,14 +63,11 @@ body {
     height: 100%;
     z-index: 10;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 .sidebar .logo {
-    position: absolute;
-    top: 38px;
+    position: relative;
     font-size: 26px;
     text-transform: capitalize;
     display: flex;
@@ -78,7 +76,6 @@ body {
 }
 
 .sidebar .logo img {
-    display: flex;
     width: 120px;
     height: auto;
     margin-top: 25px;
@@ -86,6 +83,7 @@ body {
 } 
 
 .sidebar .logo a {
+    position: relative;
     color: #D2E3C8;
     text-transform: uppercase;
     font-weight: 500;
@@ -103,7 +101,7 @@ body {
 
 .sidebar ul {
     list-style: none;
-    margin-top: -200px;
+    margin-top: 20px;
 }
 
 ul {
@@ -148,6 +146,9 @@ ul {
     color: #D2E3C8;
     margin-right: 10px;
     font-size: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
 }
 
 /* sidebar end */
@@ -223,28 +224,6 @@ ul {
     z-index: 1;
 }
 
-.row::before {
-    content: '';
-    position: absolute;
-    width: 50%;
-    border-bottom: 1px solid var(--text-peach);
-    top: 110px;
-    opacity: 60%;
-    min-width: 400px;
-    left: 45px;
-}
-
-.row::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    border-bottom: 1px solid var(--text-peach);
-    bottom: 190px;
-    opacity: 60%;
-    min-width: 400px;
-    left: 45px;
-}
-
 .home {
     min-height: 100vh;
     display: flex;
@@ -270,12 +249,14 @@ ul {
 } 
 .home-img img {
     height: 500px;
-    filter: brightness(0) saturate(100%) invert(39%) sepia(21%) saturate(576%) hue-rotate(75deg) brightness(94%) contrast(87%);
+    filter: brightness(0) saturate(100%) invert(23%) sepia(14%) saturate(1162%) hue-rotate(71deg) brightness(96%) contrast(91%);
+    transform: scaleX(-1);
 }
 
 .home-info h3 {
-    font-size: 38px;
+    font-size: 42px;
     text-wrap: nowrap;
+    margin-bottom: 50px;
 }
 
 .kamerado {
@@ -288,6 +269,20 @@ ul {
     font-size: 22px;
     text-align: center;
     text-wrap: pretty;
+}
+.home-info p::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid var(--text-peach);
+    opacity: 60%;
+    margin-top: 40px;
+}
+.home-info p::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid var(--text-peach);
+    opacity: 60%;
+    margin-bottom: 40px;
 }
 
 /* Søknads button */
@@ -312,17 +307,16 @@ ul {
 .about .about-content {
     display: flex;
     justify-content: space-between; /* Spread the content horizontally */
-    align-items: center;
 }
 
 .about .section-title {
-    margin-bottom: 50px;
-    margin-bottom: 10%;
+    margin-bottom: 0;
 }
 
 .about .about-content .about-text {
     flex: 0 0 45%;
     max-width: 50%;
+    margin-top: 50px;
 }
 
 .about .about-content .about-text p {
@@ -336,7 +330,7 @@ ul {
     font-size: 18px;
     color: var(--text-peach);
     padding-left: 80px;
-    margin-top: 200px;
+    margin-top: 40px;
 }
 
 .about .about-members p {
@@ -370,10 +364,10 @@ ul {
 .about-content::before {
     content: '';
     position: absolute;
-    height: 70%;
+    height: 100%;
     width: 1px;
     left: 50%;
-    margin-top: 180px;
+    margin-top: 20px;
     opacity: 0.2;
     transform: translateX(-50%);
     background-color: var(--text-peach);
@@ -467,7 +461,7 @@ ul {
     height: 2px;
     background-color: var(--text-peach);
     opacity: 40%;
-    margin-top: 120px; /* Adjust margin as needed */
+    margin-top: 80px; /* Adjust margin as needed */
 }
 
 /* ONLY ADDS LINE IF SCREEN IS NOT ON PHONE OR WIDTH HIGHER THAN 1500PX */
@@ -634,6 +628,7 @@ ul {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .contact-title h2 {
@@ -654,22 +649,17 @@ ul {
 }
 
 .contact .contact-form {
-    flex: 0 0 100%;
-    max-width: 100%;
+    width: 800px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
 }
-.contact .col6-container {
-    display: flex;
-    justify-content: center;
-    margin-left: 350px;
-}
+
 .contact .contact-form .col-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 .contact .contact-form .col-12 {
-    flex: 0 0 79%;
+    flex: 0 0 100%;
     max-width: 100%;
-    margin: 0 auto;
 }
 .contact .contact-form .form-item {
     margin-bottom: 20px;
@@ -733,10 +723,10 @@ ul {
 
 .contact .contact-info-item .icon {
     display: inline-block;
+    font-size: 35px;
 }
-.contact .contact-info-item .icon .fa {
-    font-size: 25px;
-    color: var(--skin-color);
+.contact .contact-info-item .icon i {
+    font-size: 30px;
 }
 .contact .contact-info-item h4 {
     font-size: 18px;
@@ -753,5 +743,6 @@ ul {
     line-height: 25px;
     color: var(--text-peach);
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }

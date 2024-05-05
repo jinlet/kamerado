@@ -6,6 +6,8 @@
     <!-- === CSS FILES === -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Kamerado</title>
 </head>
 <body>
@@ -19,10 +21,10 @@
                 <img src="images/logo.png" alt="navlogo">
             </div>
             <ul class="nav">
-                <li><i class="fa fa-users"></i><a href="#about" class="active">Om oss</a></li>
-                <li><i class="fa fa-comment"></i><a href="#faq">Ofte stilte spørsmål</a></li>
-                <li><i class="fa fa-gift"></i><a href="#awards">Tildelinger</a></li>
-                <li><i class="fa fa-envelope"></i><a href="#contact">Kontakt</a></li>
+                <li><i class="material-icons">group</i><a href="#about" class="active">Om oss</a></li>
+                <li><i class="material-icons">forum</i><a href="#faq">Ofte stilte spørsmål</a></li>
+                <li><i class="material-icons">emoji_events</i><a href="#awards">Tildelinger</a></li>
+                <li><i class="material-icons">contact_mail</i><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
         <!-- Sidebar End -->
@@ -95,13 +97,13 @@
                     <div class="rows">
                         <div class="faq-content">
                             <div class="faq-question">
-                                <span>Hvem kan motta penger?</span>
+                                <span>Hvem kan søke om støtte?</span>
                             </div>
                             <div class="faq-answer">
-                                <p>Både små og store prosjekter kan søke om midler så lenge Kamerados vedtekter ivaretas.</p>
+                                <p>Både små og store organisasjoner samt enkeltpersoner kan søke om midler så lenge Kamerados vedtekter ivaretas.</p>
                             </div>
                             <div class="faq-question">
-                                <span>Hvordan søke om penger?</span>
+                                <span>Hvordan søke om midler?</span>
                             </div>
                             <div class="faq-answer">
                                 <p>Bruk <a href="#">søknadsskjemaet</a> på forsiden. Maksgrensen på søknadsbeløp er kr 200.000. Søknaden vil bli
@@ -112,7 +114,7 @@
                                 <span>Når foregår tildelingen?</span>
                             </div>
                             <div class="faq-answer">
-                                <p>Styret møtes regelmessing og vi behandler søknadene fortløpende. Utdeling av midler skjer opptil fire ganger i året.</p>
+                                <p>Styret møtes regelmessig og vi behandler søknadene fortløpende. Utdeling av midler skjer opptil fire ganger i året.</p>
                             </div>
                             <div class="faq-question">
                                 <span>Hvilke krav stilles til rapportering?</span>
@@ -141,7 +143,7 @@
                                     <div class="timeline-item">
                                         <h2 class="timeline-date">2023 - 2026</h2>
                                         <h1>Reading cafe</h1>
-                                        <p>Kamerado støtter oppbygging av en lesekultur for barn og ungdom i Oshikotoregionen i
+                                        <p>Kamerado støtter oppbygging av lesekultur for barn og ungdom i Oshikotoregionen i
                                             Namibia gjennom konkrete tiltak og aktiviteter. Prosjektet går over tre år, 2023-2026.</p>
                                     </div>
                                 </li>
@@ -151,6 +153,13 @@
                                         <h1><a href="https://sagatun.no/" target="_blank">Sagatun Brukerstyrt Senter</a></h1>
                                         <p>Kamerado samarbeider med Sagatun om gjennomføring av spillkvelder og har gitt tilskudd til
                                             kjøp av nye møbler.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-item">
+                                        <h2 class="timeline-date">2023</h2>
+                                        <h1><a href="www.jansenfondet.no" target="_blank">Jansefondet</a></h1>
+                                        <p>Kamerado finansierer natur- og dyrevernfondet Jansenfondet.</p>
                                     </div>
                                 </li>
                                 <li>
@@ -175,23 +184,20 @@
                             <h2>Kontakt</h2>
                         </div>
                     </div>
+                    <p class="contact-paragraph">Ta kontakt med oss hvis du har spørsmål eller tips. Alle personopplysninger vil bli behandlet
+                        konfidensielt.</p>
                     <div class="rows">
-                        <!-- ==== Contact info item start ==== -->
                         <div class="contact-info-item">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <div class="icon"><i class="material-icons">mail</i></div>
                             <h4>Mail</h4>
                             <p>kontakt@kamerado.no</p>
                         </div>
-                        <!-- ==== Contact info item end ==== -->
                     </div>
-                    <p class="contact-paragraph">Ta kontakt med oss hvis du har spørsmål eller tips. Alle personopplysninger vil bli behandlet
-                        konfidensielt.</p>
                     <h3 class="contact-title">KONTAKT OSS</h3>
                     <div class="rows">
                         <div class="contact-form">
                             <form action="https://formspree.io/f/mleknked" method="POST">
                                 <div class="rows">
-                                    <div class="col6-container">
                                         <div class="form-item col-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" placeholder="Navn" name="Name">
@@ -202,7 +208,6 @@
                                                 <input type="email" class="form-control" placeholder="Din e-postadresse" name="Email" required>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
                                     <div class="rows">
                                         <div class="form-item col-12">
