@@ -561,7 +561,7 @@ ul {
     position: absolute;
     font-size: 38px;
     left: 120px;
-    margin-top: 15px;
+    margin-top: 12px;
     color: var(--text-peach);
     transition: transform 0.3s ease;
 }
@@ -760,34 +760,38 @@ ul {
     .faq .faq-content {
         max-width: 90%; /* Example adjustment for the faq content */
     }  
-
+    .soknad i {
+        left: 60px;
+    }
 }
-
 
 @media screen and (max-width: 809px) {
     .about .about-content {
         display: flex;
         flex-direction: column;
     }
-
     .about .about-content .about-text {
         max-width: 100%;
         border-bottom: 1px solid #D2E3C8;
         padding: 50px;
         margin-top: 10px;
     }
-    
     .about .about-members {
         padding-left: 0;
         margin-top: 40px;
         border-left: none;
         margin-left: 50px;
     }
-
     .rows {
         justify-content: center;
     }
-    
+    .soknad .section-title h2 {
+        font-size: 32px;
+    }
+    .soknad i {
+        font-size: 30px;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 608px) {
