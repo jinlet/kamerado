@@ -154,8 +154,7 @@ ul {
 /* SECTION START */
 
 .main-content {
-    padding-left: 150px;
-    background: var(--bg-gray);
+    padding-left: 270px;
 }
 
 .section {
@@ -755,19 +754,46 @@ ul {
         max-width: 100%;
         justify-content: center;
     }
+    .main-content {
+        padding-left: 0px;
+    }
+    .faq .faq-content {
+        max-width: 90%; /* Example adjustment for the faq content */
+    }  
+
 }
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 809px) {
     .about .about-content {
         display: flex;
+        flex-direction: column;
     }
-    .faq .faq-content {
-        max-width: 90%;
+
+    .about .about-content .about-text {
+        max-width: 100%;
+        border-bottom: 1px solid #D2E3C8;
+        padding: 50px;
+        margin-top: 10px;
     }
+    
+    .about .about-members {
+        padding-left: 0;
+        margin-top: 40px;
+        border-left: none;
+        margin-left: 50px;
+    }
+
+    .rows {
+        justify-content: center;
+    }
+    
 }
 
 @media screen and (max-width: 608px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
     .home-info h3 {
         font-size: 28px;
         white-space: nowrap; /* Prevent text wrapping */
@@ -783,36 +809,46 @@ ul {
     .about .about-members {
         font-size: 18px;
         color: var(--text-peach);
-        padding-left: 60px;
         margin-top: 40px;
+    }
+    .faq .faq-question {
+        font-size: 26px;
+    }
+    
+    .faq .faq-answer {
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 533px) {
-    .home {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
-        margin: 0 auto; /* Reset margins */
+@media screen and (max-width: 400px) {
+    .section-title h2 {
+        font-size: 24px;
     }
-
-    .home-info {
-        flex: 0 0 90%; /* Adjusted to take up 90% of the screen width */
-        max-width: 90%; /* Adjusted to take up 90% of the screen width */
-        text-align: center; /* Center text horizontally */
+    .home-info h3 {
+        font-size: 22px;
+        white-space: nowrap; /* Prevent text wrapping */
+        margin-bottom: 30px;
     }
-
     .home-info p {
-        width: 100%; /* Ensure paragraph takes up full width */
-        text-align: center; /* Center paragraph text */
+        font-size: 14px;
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+    .home a.button {
+        font-size: 28px;
+    }
+    .about .about-content .about-text p {
+        font-size: 14px;
     }
     .about .about-members {
-        margin-left: 25px;
-        padding-left: 5px;
+        font-size: 14px;
+        color: var(--text-peach);
+        margin-top: 40px;
     }
-    .faq .faq-content {
-        max-width: 120%; /* Example adjustment for the faq content */
-    }  
+    .faq .faq-question {
+        font-size: 22px;
+    }
+    
+    .faq .faq-answer {
+        font-size: 14px;
+    }
 }
