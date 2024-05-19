@@ -450,7 +450,7 @@ ul {
 }
 
 /* ONLY ADDS LINE IF SCREEN IS NOT ON PHONE OR WIDTH HIGHER THAN 1500PX */
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1200px) {
     .awards-content::before {
         content: '';
         position: absolute;
@@ -817,10 +817,25 @@ ul {
     }
     .faq .faq-question {
         font-size: 26px;
-    }
-    
+    }  
     .faq .faq-answer {
         font-size: 18px;
+    }
+
+    .soknad .section-title h2 {
+        font-size: 24px;
+    }
+    .soknad i {
+        font-size: 28px;
+        margin-top: 6px;
+    }
+    .soknad label {
+        color: var(--text-peach); /* Change text color */
+        font-size: 16px;
+    }
+    .soknad .soknad-form .form-item .form-control {
+        padding: 10px 10px;
+        font-size: 11px;
     }
 }
 
@@ -848,11 +863,26 @@ ul {
         color: var(--text-peach);
         margin-top: 40px;
     }
+    
     .faq .faq-question {
         font-size: 22px;
     }
-    
     .faq .faq-answer {
         font-size: 14px;
+    }
+
+    .soknad .section-title h2 {
+        font-size: 18px;
+    }
+    .soknad i {
+        font-size: 22px;
+        margin-top: 4px;
+    }
+    .soknad label {
+        font-size: 12px;
+    }
+    .soknad .soknad-form .form-item .form-control {
+        padding: 10px 10px;
+        font-size: 11px;
     }
 }
