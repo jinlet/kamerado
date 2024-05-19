@@ -388,7 +388,8 @@ ul {
 }
 
 .faq-content i {
-    font-size: 30px;
+    font-size: 34px;
+    transition: transform 0.2s ease-in;
 }
 
 .faq-content.active .faq-answer {
