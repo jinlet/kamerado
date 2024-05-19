@@ -361,25 +361,46 @@ ul {
 /* FAQ */
 .faq .faq-content {
     max-width: 70%;
+    border-bottom: 2px solid var(--text-peach);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .faq .faq-question {
     font-size: 32px;
     font-weight: 600;
     color: var(--text-peach);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faq .faq-answer {
     font-size: 24px;
     opacity: 0.8;
     color: var(--text-peach);
-    padding-bottom: 35px;
-    padding-top: 5px;
+    padding-bottom: 10px;
     line-height: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+}
+
+.faq-content i {
+    font-size: 30px;
+}
+
+.faq-content.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-content.active i {
+    transform: rotate(180deg);
 }
 
 .faq .faq-answer p {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .faq-answer p a {
@@ -405,6 +426,7 @@ ul {
     padding: 20px;
     background-color: var(--bg-black);
     margin-bottom: 20px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .awards-content ul li:last-child {
@@ -872,17 +894,17 @@ ul {
     }
 
     .soknad .section-title h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .soknad i {
         font-size: 22px;
         margin-top: 4px;
     }
     .soknad label {
-        font-size: 12px;
+        font-size: 10px;
     }
     .soknad .soknad-form .form-item .form-control {
         padding: 10px 10px;
-        font-size: 11px;
+        font-size: 8px;
     }
 }
