@@ -174,6 +174,7 @@ ul {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    width: 100%;
 }
 
 .section-title h2 {
@@ -185,6 +186,31 @@ ul {
 }
 
 .section-title h2::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--text-peach);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title-soknad {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.section-title-soknad h2 {
+    font-size: 40px;
+    color: var(--text-peach);
+    font-weight: 700;
+    position: relative;
+    white-space: nowrap;
+}
+
+.section-title-soknad h2::after {
     content: '';
     height: 2px;
     width: 100%;
@@ -299,39 +325,48 @@ ul {
 
 /* OM OSS */
 .about .about-content {
-    display: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.about .section-title {
-    margin-bottom: 0;
+.about {
+    background: linear-gradient(155deg, #739072 50%, #4F6F52 50%);
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .about .about-content .about-text {
-    display: inline-block;
+    flex: 1;
     max-width: 45%;
-    margin-top: 50px;
-    vertical-align: top;
+    padding: 90px;
+    background: var(--bg-black);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .about .about-content .about-text p {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height:1.6;
     color: var(--text-peach);
 }
 
 .about .about-members {
-    display: inline-block;
-    font-size: 18px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    padding: 20px;
+    background: var(--bg-gray);
     color: var(--text-peach);
-    padding-left: 60px;
-    margin-top: 40px;
-    border-left: 1px solid rgba(210, 227, 200, 0.2);
-    margin-left: 50px;
+    border-radius: 8px;
 }
 
 .about .about-members p {
-    position: relative;
-    margin-top: 10px;
+    font-size: 18px;
+    color: var(--text-peach);
+    margin: 10px 0;
 }
 
 .about .about-members ul {
@@ -340,16 +375,18 @@ ul {
 }
 
 .board-members {
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 30px;
 }
 .board-member-line {
-    border-bottom: 2px solid var(--text-peach);
+    border-bottom: 1px solid var(--text-peach);
     display: inline-block;
-    width: auto;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
-.board-members li {
-    font-weight: 500;
+.board-members ul {
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
 .about .about-members ul li {
@@ -359,12 +396,17 @@ ul {
 }
 
 /* FAQ */
+.faq {
+    background: linear-gradient(335deg, #739072 50%, #4F6F52 50%);
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .faq .faq-content {
     max-width: 70%;
     border-bottom: 2px solid var(--text-peach);
     cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px auto;
 }
 
 .faq .faq-question {
@@ -473,7 +515,7 @@ ul {
 }
 
 /* ONLY ADDS LINE IF SCREEN IS NOT ON PHONE OR WIDTH HIGHER THAN 1500PX */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 600px) {
     .awards-content::before {
         content: '';
         position: absolute;
@@ -744,6 +786,14 @@ ul {
     margin: 5px 0 5px;
 }
 
+.contact .contact-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements horizontally */
+    text-align: center; /* Ensure text inside child elements is centered */
+    width: 100%; /* Ensure it takes the full width of the container */
+}
+
 .contact .contact-paragraph {
     display: flex;
     justify-content: center;
@@ -753,6 +803,8 @@ ul {
     font-weight: 500;
     margin-bottom: 10px;
     margin-top: 30px;
+    text-align: center;
+    width: 70%;
 }
 
 /* ADJUSTING RESPONSE FOR SMALL SCREENS */
@@ -765,6 +817,9 @@ ul {
     }
     .home-img img {
         max-height: 300px; 
+    }
+    .burger-menu {
+        display: block !important;
     }
 }
 
@@ -908,4 +963,21 @@ ul {
         padding: 10px 10px;
         font-size: 8px;
     }
+}
+
+/*BURGER MENU*/
+.burger-menu {
+    display: none; /* Initially hide the burger menu icon */
+    cursor: pointer;
+    position: fixed; /* Position the burger menu icon fixed */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust to place it on the right side */
+    z-index: 1000; /* Ensure the icon appears above other content */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--bg-black);
+    margin: 4px 0;
 }
