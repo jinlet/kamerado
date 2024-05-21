@@ -456,6 +456,10 @@ ul {
 
 
 /* Tildelinger */
+.awards {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .awards .awards-content {
     width: 80%;
     height: auto;
@@ -574,10 +578,6 @@ ul {
     }
 }
 
-
-
-
-
 .shadow-dark {
     box-shadow: 0 0 10px rgba(253, 217, 196, 0.507);
 }
@@ -674,6 +674,10 @@ ul {
 }
 
 /* KONTAKT */
+.contact {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .contact-title {
     display: flex;
     justify-content: center;
@@ -802,7 +806,7 @@ ul {
     color: var(--text-peach);
     font-weight: 500;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 0;
     text-align: center;
     width: 70%;
 }
@@ -813,10 +817,13 @@ ul {
         left: -270px;  /*removes navbar*/
     }
     .main-content {
-        padding-left: 20px;
+        padding-left: 0;
     }
     .home-img img {
         max-height: 300px; 
+    }
+    nav {
+        display: block !important;
     }
     .burger-menu {
         display: block !important;
@@ -841,6 +848,9 @@ ul {
     .soknad i {
         left: 60px;
     }
+    .contact .contact-form {
+        width: 700px; /* Set a maximum width for the form */
+    }
 }
 
 @media screen and (max-width: 809px) {
@@ -850,32 +860,30 @@ ul {
     }
     .about .about-content .about-text {
         max-width: 100%;
-        border-bottom: 1px solid #D2E3C8;
         padding: 50px;
         margin-top: 10px;
     }
     .about .about-members {
-        padding-left: 0;
+        text-align: center;
         margin-top: 40px;
-        border-left: none;
-        margin-left: 50px;
+        max-width: 100%;
     }
     .rows {
         justify-content: center;
     }
-    .soknad .section-title h2 {
+    .soknad .section-title-soknad h2 {
         font-size: 32px;
     }
     .soknad i {
         font-size: 30px;
         left: 0;
     }
+    .contact .contact-form {
+        width: 550px; /* Set a maximum width for the form */
+    }
 }
 
 @media screen and (max-width: 608px) {
-    .section-title h2 {
-        font-size: 28px;
-    }
     .home-info h3 {
         font-size: 28px;
         white-space: nowrap; /* Prevent text wrapping */
@@ -900,11 +908,11 @@ ul {
         font-size: 18px;
     }
 
-    .soknad .section-title h2 {
-        font-size: 24px;
+    .soknad .section-title-soknad h2 {
+        font-size: 22px;
     }
     .soknad i {
-        font-size: 28px;
+        font-size: 24px;
         margin-top: 6px;
     }
     .soknad label {
@@ -912,8 +920,11 @@ ul {
         font-size: 16px;
     }
     .soknad .soknad-form .form-item .form-control {
-        padding: 10px 10px;
-        font-size: 11px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .contact .contact-form {
+        width: 350px; /* Set a maximum width for the form */
     }
 }
 
@@ -934,7 +945,7 @@ ul {
         font-size: 28px;
     }
     .about .about-content .about-text p {
-        font-size: 14px;
+        font-size: 16px;
     }
     .about .about-members {
         font-size: 14px;
@@ -949,35 +960,127 @@ ul {
         font-size: 14px;
     }
 
-    .soknad .section-title h2 {
+    .soknad .section-title-soknad h2 {
         font-size: 16px;
     }
     .soknad i {
-        font-size: 22px;
+        font-size: 20px;
         margin-top: 4px;
     }
     .soknad label {
-        font-size: 10px;
+        font-size: 12px;
     }
     .soknad .soknad-form .form-item .form-control {
         padding: 10px 10px;
-        font-size: 8px;
+        font-size: 12px;
+    }
+    .contact .contact-form {
+        width: 340px; /* Set a maximum width for the form */
     }
 }
 
 /*BURGER MENU*/
+.off-screen-menu {
+    background-color: var(--bg-black);
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    z-index: 1000;
+    line-height: 5rem;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
 .burger-menu {
-    display: none; /* Initially hide the burger menu icon */
+    display: none; /* Hide by default */
     cursor: pointer;
-    position: fixed; /* Position the burger menu icon fixed */
-    top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust to place it on the right side */
-    z-index: 1000; /* Ensure the icon appears above other content */
+    position: fixed; /* Fix the position */
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    z-index: 1002; /* Ensure it is above other content */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-logo {
+    max-width: 50%; /* Ensure the logo is responsive */
+    height: auto;
+    margin-top: 50px;
+    filter: brightness(0) saturate(100%) invert(86%) sepia(18%) saturate(201%) hue-rotate(54deg) brightness(98%) contrast(97%);
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: var(--bg-black);
-    margin: 4px 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--text-peach);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+.bar:nth-child(1) {
+    top: 25%;
+}
+.bar:nth-child(3) {
+    top: 75%;
+}
+
+.burger-menu.active .bar:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.burger-menu.active .bar:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.burger-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.burger-nav li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-nav li i {
+    margin-right: 0;
+    font-size: 2rem;
+    color: white;
+}
+
+.burger-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center; /* Center the text */ /* Add a max-width to prevent text from spreading too far */
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
