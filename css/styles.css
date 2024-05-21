@@ -1,25 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    /*
-    --bg-black:#112D32;
-    --bg-gray: #254E58;
-    --text-peach: #b4ab99;
-    */
-    /*
-    MINT PALETTE
-    --bg-black:#DCE0D9;
-    --bg-gray: #FBF6EF;
-    --text-peach: #283618;
-    brightness(0) saturate(100%) invert(13%) sepia(4%) saturate(6619%) hue-rotate(45deg) brightness(102%) contrast(85%)
-    */
-    /*
-    EARTHY PALETTE
-    --bg-black:#C08552;
-    --bg-gray: #F3E9DC;
-    --text-peach: #5E3023;
-    brightness(0) saturate(100%) invert(19%) sepia(12%) saturate(2763%) hue-rotate(326deg) brightness(96%) contrast(90%)
-    */
-    
     --bg-black:#4F6F52;
     --bg-gray: #739072;
     --text-peach: #D2E3C8;
@@ -515,7 +495,7 @@ ul {
     height: 2px;
     background-color: var(--text-peach);
     opacity: 40%;
-    margin-top: 80px; /* Adjust margin as needed */
+    margin-top: 80px; 
 }
 
 /* ONLY ADDS LINE IF SCREEN IS NOT ON PHONE OR WIDTH HIGHER THAN 1500PX */
@@ -656,7 +636,7 @@ ul {
 }
 
 .soknad .section-title {
-    display: block; /* Ensure the title is a block element */
+    display: block; 
     margin: 0 auto; /* Center the title horizontally */
     margin-bottom: 60px;
 }
@@ -703,8 +683,8 @@ ul {
 }
 
 .contact .contact-form {
-    width: 800px; /* Set a maximum width for the form */
-    margin: 0 auto; /* Center the form horizontally */
+    width: 800px; 
+    margin: 0 auto; 
 }
 
 .contact .contact-form .col-6 {
@@ -793,9 +773,9 @@ ul {
 .contact .contact-rows {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center all child elements horizontally */
-    text-align: center; /* Ensure text inside child elements is centered */
-    width: 100%; /* Ensure it takes the full width of the container */
+    align-items: center; 
+    text-align: center; 
+    width: 100%;
 }
 
 .contact .contact-paragraph {
@@ -843,13 +823,13 @@ ul {
         padding-left: 0px;
     }
     .faq .faq-content {
-        max-width: 90%; /* Example adjustment for the faq content */
+        max-width: 90%; 
     }  
     .soknad i {
         left: 60px;
     }
     .contact .contact-form {
-        width: 700px; /* Set a maximum width for the form */
+        width: 700px; 
     }
 }
 
@@ -879,19 +859,19 @@ ul {
         left: 0;
     }
     .contact .contact-form {
-        width: 550px; /* Set a maximum width for the form */
+        width: 550px;
     }
 }
 
 @media screen and (max-width: 608px) {
     .home-info h3 {
         font-size: 28px;
-        white-space: nowrap; /* Prevent text wrapping */
+        white-space: nowrap; 
         margin-bottom: 30px;
     }
     .home-info p {
         font-size: 18px;
-        margin-top: 15px; /* Adjust margin for smaller screens */
+        margin-top: 15px;
     }
     .about .about-content .about-text p {
         font-size: 18px;
@@ -916,7 +896,7 @@ ul {
         margin-top: 6px;
     }
     .soknad label {
-        color: var(--text-peach); /* Change text color */
+        color: var(--text-peach); 
         font-size: 16px;
     }
     .soknad .soknad-form .form-item .form-control {
@@ -924,7 +904,7 @@ ul {
         font-size: 12px;
     }
     .contact .contact-form {
-        width: 350px; /* Set a maximum width for the form */
+        width: 350px;
     }
 }
 
@@ -934,12 +914,12 @@ ul {
     }
     .home-info h3 {
         font-size: 22px;
-        white-space: nowrap; /* Prevent text wrapping */
+        white-space: nowrap; 
         margin-bottom: 30px;
     }
     .home-info p {
         font-size: 14px;
-        margin-top: 15px; /* Adjust margin for smaller screens */
+        margin-top: 15px; 
     }
     .home a.button {
         font-size: 28px;
@@ -975,7 +955,7 @@ ul {
         font-size: 12px;
     }
     .contact .contact-form {
-        width: 340px; /* Set a maximum width for the form */
+        width: 340px; 
     }
 }
 
@@ -1004,21 +984,21 @@ ul {
 }
 
 .burger-menu {
-    display: none; /* Hide by default */
+    display: none; 
     cursor: pointer;
-    position: fixed; /* Fix the position */
+    position: fixed; 
     top: 20px;
     right: 20px;
     height: 50px;
     width: 50px;
-    z-index: 1002; /* Ensure it is above other content */
+    z-index: 1002; 
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .nav-logo {
-    max-width: 50%; /* Ensure the logo is responsive */
+    max-width: 50%; 
     height: auto;
     margin-top: 50px;
     filter: brightness(0) saturate(100%) invert(86%) sepia(18%) saturate(201%) hue-rotate(54deg) brightness(98%) contrast(97%);
@@ -1079,8 +1059,8 @@ ul {
     color: white;
     font-size: 1.5rem;
     display: block;
-    text-align: center; /* Center the text */ /* Add a max-width to prevent text from spreading too far */
-    white-space: nowrap; /* Prevent text from breaking into multiple lines */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    text-align: center; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
