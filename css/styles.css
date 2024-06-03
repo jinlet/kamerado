@@ -5,6 +5,27 @@
     --text-peach: #D2E3C8;
 }
 
+/* WebKit and Blink browsers (Chrome, Safari, Brave, etc.) */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #4F6F52 inset !important;
+    box-shadow: 0 0 0 1000px #4F6F52 inset !important;
+    -webkit-text-fill-color: #fff !important;
+    font-size: inherit !important; /* Ensure consistent text size */
+    font-family: inherit !important; /* Ensure consistent font family */
+}
+
+/* Mozilla Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+    box-shadow: 0 0 0 1000px #4F6F52 inset !important;
+    -moz-text-fill-color: #fff !important;
+    font-size: inherit !important; /* Ensure consistent text size */
+    font-family: inherit !important; /* Ensure consistent font family */
+}
+
 .hidden {
     display: none !important;
 }
