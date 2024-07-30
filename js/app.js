@@ -11,6 +11,7 @@ faqs.forEach(faq => {
 const hamMenu = document.querySelector(".burger-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 const navItems = document.querySelectorAll(".burger-nav li"); 
+const logoLink = document.querySelector(".nav-logo-link"); 
 
 hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");
@@ -33,4 +34,12 @@ navItems.forEach(item => {
             hamMenu.classList.remove('active');
         }
     });
+});
+
+// Add an event listener to the logo link to close the menu when clicked
+logoLink.addEventListener('click', () => {
+    if (offScreenMenu.classList.contains('active')) {
+        offScreenMenu.classList.remove('active');
+        hamMenu.classList.remove('active');
+    }
 });
