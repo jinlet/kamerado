@@ -9,8 +9,8 @@ faqs.forEach(faq => {
 
 //Active for Burger-menu //
 const hamMenu = document.querySelector(".burger-menu");
-
 const offScreenMenu = document.querySelector(".off-screen-menu");
+const navItems = document.querySelectorAll(".burger-nav li"); 
 
 hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");
@@ -24,3 +24,13 @@ function closeMenuOnLargeScreen() {
         menu.classList.remove('active');
     }
 }
+
+// Add event listeners to each nav item to close the menu when clicked
+navItems.forEach(item => {
+    item.addEventListener("click", () => {
+        if (offScreenMenu.classList.contains('active')) {
+            offScreenMenu.classList.remove('active');
+            hamMenu.classList.remove('active');
+        }
+    });
+});
