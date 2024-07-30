@@ -835,10 +835,23 @@ ul {
 }
 
 @media screen and (max-width: 991px) {
-    .home .home-img img {
-        display: none;
+    .rows {
+        justify-content: center;
+    }
+    .home {
+        position: relative;
+    }
+    .home .home-img {
+        position: absolute;
+        top: 0;
+        transform: translateY(40%);
+        z-index: 1;
+    }
+    .home-img img {
+        height: 700px;
     }
     .home .home-info {
+        z-index: 2;
         flex: 0 0 100%;
         max-width: 100%;
         justify-content: center;
@@ -872,9 +885,6 @@ ul {
         margin-top: 40px;
         max-width: 100%;
     }
-    .rows {
-        justify-content: center;
-    }
     .soknad .section-title-soknad h2 {
         font-size: 32px;
     }
@@ -888,6 +898,9 @@ ul {
 }
 
 @media screen and (max-width: 608px) {
+    .home .home-img {
+        top: -10%;
+    }
     .home-info h3 {
         font-size: 28px;
         white-space: nowrap; 
