@@ -899,6 +899,15 @@ ul {
     .contact .contact-form {
         width: 700px; 
     }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+    .btn {
+        width: 100%; /* Full width for buttons */
+        max-width: 250px; /* Limit max width for smaller screens */
+        margin: 10px 0; /* Space between buttons */
+    }
 }
 
 @media screen and (max-width: 809px) {
@@ -1024,6 +1033,10 @@ ul {
     }
     .contact .contact-form {
         width: 340px; 
+    }
+    .btn {
+        max-width: 200px; /* Limit max width for smaller screens */
+        font-size: 14px;
     }
 }
 
