@@ -309,8 +309,10 @@ ul {
 /* Søknads button */
 .home-button-container {
     display: flex;
-    justify-content: center; 
-    gap: 20px;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 50px; /* Same as the existing margin */
 }
 
 .home a.button {
@@ -323,7 +325,7 @@ ul {
     white-space: nowrap;
     background: var(--text-peach);
     transition: all 0.3s ease;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .home a.button:hover {
