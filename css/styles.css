@@ -307,6 +307,12 @@ ul {
 }
 
 /* Søknads button */
+.home-button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
 .home a.button {
     font-size: 32px;
     font-weight: 500;
