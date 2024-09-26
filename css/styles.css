@@ -309,10 +309,9 @@ ul {
 /* Søknads button */
 .home-button-container {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center buttons horizontally */
-    gap: 10px; /* Adds space between buttons */
-    margin-top: 50px; /* Same as the existing margin */
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 50px; 
 }
 
 .home a.button {
@@ -326,6 +325,7 @@ ul {
     background: var(--text-peach);
     transition: all 0.3s ease;
     margin-top: 50px;
+    text-align: center;
 }
 
 .home a.button:hover {
@@ -958,6 +958,12 @@ ul {
         font-size: 18px;
         margin-top: 15px;
     }
+    .home a.button {
+        font-size: 24px; /* Smaller font size for mobile */
+        padding: 10px 0; /* Adjust padding for mobile */
+        width: 90%; /* Make sure the buttons fit the screen */
+        white-space: normal;
+    }
     .about .about-content .about-text p {
         font-size: 18px;
     }
@@ -1007,7 +1013,8 @@ ul {
         margin-top: 15px; 
     }
     .home a.button {
-        font-size: 28px;
+        font-size: 20px; /* Smaller font size for mobile */
+        margin-top: 20px;
     }
     .about .about-content .about-text p {
         font-size: 16px;
