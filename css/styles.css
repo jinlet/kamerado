@@ -378,6 +378,14 @@ ul {
     margin: 10px 0;
 }
 
+.about .about-members a {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+.about .about-members a:hover {
+    opacity: 0.7;
+}
+
 .about .about-members ul {
     padding-left: 20px;
     margin-top: 10px;
@@ -505,11 +513,17 @@ ul {
     opacity: 0.7;
 }
 
-
 .timeline-item p {
     font-size: 16px;
     line-height: 30px;
     font-weight: 300;
+}
+
+.awards-content p a {
+    color: inherit;
+}
+.awards-content p a:hover {
+    opacity: 0.7;
 }
 
 .timeline-item .timeline-date {
