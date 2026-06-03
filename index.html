@@ -3,137 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- === CSS FILES === -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Kamerado</title>
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
-    <link rel="manifest" href="image/site.webmanifest">
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Kamerado",
-            "url": "https://www.kamerado.no",
-            "logo": "https://www.kamerado.no/images/logo.png"
-        }
-        </script>
-        
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kamerado",
+        "url": "https://www.kamerado.no",
+        "logo": "https://www.kamerado.no/images/logo.png"
+    }
+    </script>
 </head>
 <body>
-    <!-- === MAIN CONTAINER START === -->
     <div class="main-container">
 
-        <!-- Sidebar Start -->
+        <!-- Sidebar -->
         <div class="sidebar">
             <div class="logo">
                 <a href="#">Kamerado</a>
-                <img src="images/logo.png" alt="navlogo">
+                <img src="images/logo.png" alt="Kamerado logo">
             </div>
             <ul class="nav">
-                <li><i class="material-icons">group</i><a href="#about" class="active">Om oss</a></li>
+                <li><i class="material-icons">group</i><a href="#about">Om oss</a></li>
                 <li><i class="material-icons">forum</i><a href="#faq">Ofte stilte spørsmål</a></li>
                 <li><i class="material-icons">emoji_events</i><a href="#awards">Tildelinger</a></li>
                 <li><i class="material-icons">contact_mail</i><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
-        <!-- Sidebar End -->
 
-        <!-- Main Content Start-->
         <div class="main-content">
-            <!-- Burger Menu and navigation for smaller screens -->
+
+            <!-- Mobile nav -->
             <div class="off-screen-menu">
                 <a href="#" class="nav-logo-link">
-                <img src="images/logo.png" alt="navlogo" class="nav-logo">
+                    <img src="images/logo.png" alt="Kamerado logo" class="nav-logo">
                 </a>
                 <ul class="burger-nav">
-                    <li><i class="material-icons">group</i><a href="#about" class="active">Om oss</a></li>
+                    <li><i class="material-icons">group</i><a href="#about">Om oss</a></li>
                     <li><i class="material-icons">forum</i><a href="#faq">Ofte stilte spørsmål</a></li>
                     <li><i class="material-icons">emoji_events</i><a href="#awards">Tildelinger</a></li>
                     <li><i class="material-icons">contact_mail</i><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
-
             <div class="burger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
 
-            <!-- Burger Menu and navigation for smaller screens END -->
-            <!-- Home Section Start -->
-            <section class="home section" id="#">
+            <!-- Home -->
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="rows">
                         <div class="home-info">
-                            <h3 class="welcome">Velkommen til <span class="kamerado">Kamerado</span></h3>
-                            <p>Harald Øyhovden (1934-2007) bygget opp et stort støperikonsern. Vår familie har 
+                            <span class="eyebrow">Velkommen til</span>
+                            <h3><span class="kamerado">Kamerado</span></h3>
+                            <p>Harald Øyhovden (1934–2007) bygget opp et stort støperikonsern. Vår familie har
                                 arvet en del av hans formue. Den forvaltes av selskapet Ubatuba AS.
-                                Vi har opprettet Kamerado for å gi deler av overskuddet videre til 
+                                Vi har opprettet Kamerado for å gi deler av overskuddet videre til
                                 mennesker og organisasjoner med gode prosjekter som hjelper folk.</p>
                             <div class="home-button-container">
                                 <a href="soknad.html" class="button">Send inn søknad</a>
-                                <a href="rapportering.html" class="button">Send inn rapporteringsskjema</a>
+                                <a href="rapportering.html" class="button outline">Send inn rapporteringsskjema</a>
                             </div>
-
                         </div>
                         <div class="home-img">
-                            <img src="images/logo.png" alt="Logo">
+                            <img src="images/logo.png" alt="Kamerado logo">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Home Section End -->
-            <!-- About Section Start -->
+
+            <!-- About -->
             <section class="about section" id="about">
                 <div class="container">
-                    <div class="rows">
-                        <div class="section-title">
-                            <h2>Om oss</h2>
+                    <div class="section-title">
+                        <span class="eyebrow">Hvem er vi</span>
+                        <h2>Om oss</h2>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Kamerado er et non-profit selskap med vedtektfestet formål om organisering av,
+                                og bidrag til, veldedige prosjekter. Vår virksomhet er å drive med arbeid/bistand
+                                inn mot humanitære, sosiale, naturvern-relaterte og vitenskapelige formål.
+                            </p>
+                        </div>
+                        <div class="about-members">
+                            <p><strong>Daglig leder:</strong> Liv Bjellastuen</p>
+                            <p><strong>E-post:</strong> <a href="mailto:liv@kamerado.no">liv@kamerado.no</a></p>
+                            <div class="board-members">
+                                <span class="board-member-line">Styremedlemmer</span>
+                                <ul>
+                                    <li>Marit Johnsrud (styreleder)</li>
+                                    <li>Liv Bjellastuen</li>
+                                    <li>Phuong Nguyen</li>
+                                    <li>Alexander Øyhovden</li>
+                                    <li>Asbjørn Øyhovden</li>
+                                </ul>
+                            </div>
+                            <p style="margin-top: 24px;"><strong>Orgnr:</strong> 929243617</p>
                         </div>
                     </div>
-                    <div class="rows">
-                        <div class="about-content">
-                            <div class="about-text">
-                                <p class="about-info">Kamerado er et non-profit selskap med vedtektfestet formål om organisering av, 
-                                    og bidrag til, veldedige prosjekter. Vår virksomhet er å drive med arbeid/bistand 
-                                    inn mot humanitære, sosiale, naturvern-relaterte og vitenskapelige formål.
-                                </p>
-                            </div>
-                            <div class="about-members">
-                                <p><strong>Daglig leder:</strong> Liv Bjellastuen</p>
-                                <p><strong>E-post:</strong> <a href="mailto:liv@kamerado.no">liv@kamerado.no</a></p>
-                                <div class="board-members">
-                                    <p class="board-member-line"><strong>Styremedlemmer</strong></p>
-                                    <ul>
-                                        <li>Marit Johnsrud (styreleder)</li>
-                                        <li>Liv Bjellastuen</li>
-                                        <li>Phuong Nguyen</li>
-                                        <li>Alexander Øyhovden</li>
-                                        <li>Asbjørn Øyhovden</li>
-                                    </ul>
-                                </div>
-                                <p><strong>Orgnr:</strong> 929243617</p>
-                            </div>
-                        </div>
                 </div>
             </section>
-            <!-- About Section End -->
-            <!-- FAQ Section Start -->
+
+            <!-- FAQ -->
             <section class="faq section" id="faq">
                 <div class="container">
-                    <div class="rows">
-                        <div class="section-title">
-                            <h2>Ofte stilte spørsmål</h2>
-                        </div>
+                    <div class="section-title">
+                        <span class="eyebrow">Spørsmål og svar</span>
+                        <h2>Ofte stilte spørsmål</h2>
                     </div>
-                    <div class="rows">
+                    <div class="faq-list">
                         <div class="faq-content">
                             <div class="faq-question">
                                 <span>Hvem kan søke om støtte?</span>
@@ -149,9 +138,8 @@
                                 <i class="material-icons">keyboard_arrow_down</i>
                             </div>
                             <div class="faq-answer">
-                                <p>Bruk <a href="#">søknadsskjemaet</a> på forsiden. Maksgrensen på søknadsbeløp er kr 200.000. Søknaden vil bli
-                                    faktasjekket. Vi forutsetter korrekte og ærlige opplysninger.
-                                </p>
+                                <p>Bruk <a href="soknad.html">søknadsskjemaet</a> på forsiden. Maksgrensen på søknadsbeløp er kr 200.000. Søknaden vil bli
+                                    faktasjekket. Vi forutsetter korrekte og ærlige opplysninger.</p>
                             </div>
                         </div>
                         <div class="faq-content">
@@ -176,147 +164,184 @@
                     </div>
                 </div>
             </section>
-            <!-- FAQ Section End -->
-            <!-- Awards Section Start -->
+
+            <!-- Awards -->
             <section class="awards section" id="awards">
                 <div class="container">
-                    <div class="rows">
-                        <div class="section-title">
-                            <h2>Tildelinger</h2>
-                        </div>
+                    <div class="section-title">
+                        <span class="eyebrow">Prosjekter vi støtter</span>
+                        <h2>Tildelinger</h2>
                     </div>
-                    <div class="rows">
-                        <div class="awards-content">
-                            <ul>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2025</h2>
-                                        <h1><a href="https://fremtenkt.no/" target="_blank">Fremtenkt</a></h1>
-                                        <p>Kamerado støtter videreutvikling av prosjektet "Vektere som ungdomsarbeidere".</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2025</h2>
-                                        <h1><a href="https://www.reddbarna.no/.no/" target="_blank">Redd Barna</a></h1>
-                                        <p>Kamerado støtter Redd Barnas arbeid for å hjelpe barn og ungdom i Palestina og Ukraina.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2025</h2>
-                                        <h1><a href="https://www.karanba.org/nb" target="_blank">Karanba</a></h1>
-                                        <p>Kamerado støtter Karanba - et sosialt prosjekt i Rio de Janeiro, Brasil. Med fotball som virkemiddel hjelper Karanba et stort antall barn og unge fra slumområdene med personlig utvikling, utdanning og utfoldelse.</p>
-                                    </div>
-                                </li>
+                    <div class="snake-timeline">
 
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2024</h2>
-                                        <h1><a href="https://sagatun.no/" target="_blank">Sagatun Recovery</a></h1>
-                                        <p>Kamerado støtter prosjektet "Glede og mestring med korsang".</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2024</h2>
-                                        <h1><a href="https://youthlife.no/" target="_blank">Youth Life Center</a></h1>
-                                        <p>Youth Life er en norsk forening som jobber for å støtte sårbare barn og ungdom i fattige lokalsamfunn i Zambia. Kamerado støtter videre drift av Youth Life Center, som er en viktig møteplass for ungdom i bydelene Kalingalinga og Mtendere i hovedstaden Lusaka.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2024</h2>
-                                        <h1><a href="https://fremtenkt.no/" target="_blank">Fremtenkt</a></h1>
-                                        <p>Kamerado støtter Fremtenkt og prosjektet "Vektere som ungdomsarbeidere".</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2023 - 2026</h2>
-                                        <h1>Reading cafe</h1>
-                                        <p>Kamerado støtter oppbygging av lesekultur for barn og ungdom i Oshikotoregionen i
-                                            Namibia gjennom konkrete tiltak og aktiviteter. Prosjektet går over tre år, 2023-2026.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2023</h2>
-                                        <h1><a href="https://sagatun.no/" target="_blank">Sagatun Recovery</a></h1>
-                                        <p>Kamerado samarbeider med Sagatun om gjennomføring av spillkvelder og har gitt tilskudd til
-                                            kjøp av nye møbler.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-item">
-                                        <h2 class="timeline-date">2023</h2>
-                                        <h1><a href="https://jansenfondet.no/" target="_blank">Jansenfondet</a></h1>
-                                        <p> Jansenfondet <a href="https://jansenfondet.no/" target="_blank">(jansenfondet.no)</a> er et natur- og dyrevernfond som finansieres av Kamerado.</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="snake-year"><span>2025</span></div>
+
+                        <div class="snake-entry left">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Fremtenkt</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Kamerado støtter videreutvikling av prosjektet "Vektere som ungdomsarbeidere".</p>
+                                    <a href="https://fremtenkt.no/" target="_blank" class="snake-link">fremtenkt.no ↗</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="divider-line"></div>
+
+                        <div class="snake-entry right">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Redd Barna</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Kamerado støtter Redd Barnas arbeid for å hjelpe barn og ungdom i Palestina og Ukraina.</p>
+                                    <a href="https://www.reddbarna.no/" target="_blank" class="snake-link">reddbarna.no ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snake-entry left">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Karanba</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Kamerado støtter Karanba - et sosialt prosjekt i Rio de Janeiro, Brasil. Med fotball som virkemiddel hjelper Karanba et stort antall barn og unge fra slumområdene med personlig utvikling, utdanning og utfoldelse.</p>
+                                    <a href="https://www.karanba.org/nb" target="_blank" class="snake-link">karanba.org ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snake-year"><span>2024</span></div>
+
+                        <div class="snake-entry right">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Sagatun Recovery</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Kamerado støtter prosjektet "Glede og mestring med korsang".</p>
+                                    <a href="https://sagatun.no/" target="_blank" class="snake-link">sagatun.no ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snake-entry left">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Youth Life Center</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Youth Life er en norsk forening som jobber for å støtte sårbare barn og ungdom i fattige lokalsamfunn i Zambia. Kamerado støtter videre drift av Youth Life Center, som er en viktig møteplass for ungdom i bydelene Kalingalinga og Mtendere i hovedstaden Lusaka.</p>
+                                    <a href="https://youthlife.no/" target="_blank" class="snake-link">youthlife.no ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snake-entry right">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Fremtenkt</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Kamerado støtter Fremtenkt og prosjektet "Vektere som ungdomsarbeidere".</p>
+                                    <a href="https://fremtenkt.no/" target="_blank" class="snake-link">fremtenkt.no ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snake-year"><span>2023</span></div>
+
+                        <div class="snake-entry left">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Reading cafe <span class="snake-duration">2023–2026</span></span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Kamerado støtter oppbygging av lesekultur for barn og ungdom i Oshikotoregionen i Namibia gjennom konkrete tiltak og aktiviteter. Prosjektet går over tre år, 2023–2026.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snake-entry right">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Sagatun Recovery</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Kamerado samarbeider med Sagatun om gjennomføring av spillkvelder og har gitt tilskudd til kjøp av nye møbler.</p>
+                                    <a href="https://sagatun.no/" target="_blank" class="snake-link">sagatun.no ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snake-entry left">
+                            <div class="snake-card">
+                                <div class="snake-header">
+                                    <span class="snake-title">Jansenfondet</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+                                </div>
+                                <div class="snake-body">
+                                    <p>Jansenfondet er et natur- og dyrevernfond som finansieres av Kamerado.</p>
+                                    <a href="https://jansenfondet.no/" target="_blank" class="snake-link">jansenfondet.no ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
-            <!-- Awards Section End -->
-            <!-- Contact Section Start -->
+
+            <!-- Contact -->
             <section class="contact section" id="contact">
                 <div class="container">
-                    <div class="rows">
-                        <div class="section-title">
-                            <h2>Kontakt</h2>
-                        </div>
+                    <div class="section-title">
+                        <span class="eyebrow">Ta kontakt</span>
+                        <h2>Kontakt oss</h2>
                     </div>
-                    <div class="contact-rows">
-                        <p class="contact-paragraph">Ta kontakt med oss hvis du har spørsmål eller tips. Alle personopplysninger vil bli behandlet
-                            konfidensielt.</p>
-                        <div class="contact-info-item">
-                            <div class="icon"><i class="material-icons">mail</i></div>
-                            <h4>Mail</h4>
-                            <p>kontakt@kamerado.no</p>
-                        </div>
+                    <div class="contact-lead">
+                        <p>Ta kontakt med oss hvis du har spørsmål eller tips. Alle personopplysninger vil bli behandlet konfidensielt.</p>
+                        <span class="contact-email">
+                            <i class="material-icons">mail</i>
+                            kontakt@kamerado.no
+                        </span>
                     </div>
-                    <h3 class="contact-title">KONTAKT OSS</h3>
-                    <div class="rows">
-                        <div class="contact-form">
-                            <form action="https://formspree.io/f/mzbnlajj" method="POST">
-                                <div class="rows">
-                                        <div class="form-item col-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Navn" name="Name">
-                                            </div>
-                                        </div>
-                                        <div class="form-item col-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Din e-postadresse" name="Email" required>
-                                            </div>
-                                        </div>
+                    <div class="contact-form-wrap">
+                        <form action="https://formspree.io/f/mzbnlajj" method="POST">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label>Navn</label>
+                                    <input type="text" class="form-control" placeholder="Ditt navn" name="Name">
                                 </div>
-                                    <div class="rows">
-                                        <div class="form-item col-12">
-                                            <div class="form-group">
-                                                <textarea name="" class="form-control" id="" placeholder="Melding" rows="10" required></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="rows">
-                                        <div class="form-item col-12"  style="text-align: center;">
-                                            <button type="submit" value="Submit" class="btn">Send Melding</button>
-                                        </div>
-                                    </div>
-                            </form>
-                        </div>
-                    </div>
+                                <div class="form-field">
+                                    <label>E-postadresse</label>
+                                    <input type="email" class="form-control" placeholder="din@epost.no" name="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-row full">
+                                <div class="form-field">
+                                    <label>Melding</label>
+                                    <textarea class="form-control" name="Melding" placeholder="Skriv din melding her…" rows="8" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="btn">Send melding</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
-            <!-- Contact Section End -->
+
         </div>
-        <!-- Main Content End-->
     </div>
-    <!-- === MAIN CONTAINER END === -->
-    <script src="./js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

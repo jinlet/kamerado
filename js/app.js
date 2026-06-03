@@ -1,55 +1,45 @@
-// Function to handle FAQ content
 function handleFAQs() {
-    const faqs = document.querySelectorAll(".faq-content");
+    document.querySelectorAll(".faq-content").forEach(faq => {
+        faq.addEventListener("click", () => faq.classList.toggle("active"));
+    });
+}
 
-    faqs.forEach(faq => {
-        faq.addEventListener("click", () => {
-            faq.classList.toggle("active");
+function handleAwards() {
+    document.querySelectorAll(".snake-entry").forEach(entry => {
+        entry.querySelector(".snake-card").addEventListener("click", () => {
+            entry.classList.toggle("open");
         });
     });
 }
 
-// Function to handle the burger menu
 function handleBurgerMenu() {
     const hamMenu = document.querySelector(".burger-menu");
     const offScreenMenu = document.querySelector(".off-screen-menu");
-    const navItems = document.querySelectorAll(".burger-nav li"); 
-    const logoLink = document.querySelector(".nav-logo-link"); 
+
+    function closeMenu() {
+        hamMenu.classList.remove("active");
+        offScreenMenu.classList.remove("active");
+    }
 
     hamMenu.addEventListener("click", () => {
         hamMenu.classList.toggle("active");
         offScreenMenu.classList.toggle("active");
     });
 
-    // Function to close the menu if screen width exceeds 1200px
-    function closeMenuOnLargeScreen() {
-        const menu = document.querySelector('.off-screen-menu');
-        if (window.innerWidth >= 1200 && menu.classList.contains('active')) {
-            menu.classList.remove('active');
-        }
-    }
-
-    // Add event listeners to each nav item to close the menu when clicked
-    navItems.forEach(item => {
-        item.addEventListener("click", () => {
-            if (offScreenMenu.classList.contains('active')) {
-                offScreenMenu.classList.remove('active');
-                hamMenu.classList.remove('active');
-            }
-        });
+    document.querySelectorAll(".burger-nav li").forEach(item => {
+        item.addEventListener("click", closeMenu);
     });
 
-    // Add an event listener to the logo link to close the menu when clicked
-    logoLink.addEventListener('click', () => {
-        if (offScreenMenu.classList.contains('active')) {
-            offScreenMenu.classList.remove('active');
-            hamMenu.classList.remove('active');
-        }
+    const logoLink = document.querySelector(".nav-logo-link");
+    if (logoLink) logoLink.addEventListener("click", closeMenu);
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1200) closeMenu();
     });
 }
 
-// Initialize functions on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     handleFAQs();
+    handleAwards();
     handleBurgerMenu();
 });
